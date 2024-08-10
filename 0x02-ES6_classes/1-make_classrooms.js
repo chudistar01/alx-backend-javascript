@@ -7,5 +7,4 @@ function initializeRooms() {
     new ClassRoom(19),
   ];
 }
-
 export default initializeRooms;
