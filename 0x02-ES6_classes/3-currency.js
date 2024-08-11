@@ -26,7 +26,7 @@ class Currency {
     return this._name;
   }
 
-  displayFulCurrency() {
+  displayFullCurrency() {
     return `${this.name} (${this.code})`;
   }
 }
