@@ -4,9 +4,14 @@ module.exports = {
     es6: true,
     jest: true,
   },
+  parser: '@typescript-eslint/parser',
   extends: [
     'airbnb-base',
     'plugin:jest/all',
+    'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:@typescript-eslint/recommended'
+
   ],
   globals: {
     Atomics: 'readonly',
@@ -16,7 +21,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['jest'],
+
+    plugins: ['jest', '@typescript-eslint'],
   rules: {
     'max-classes-per-file': 'off',
     'no-underscore-dangle': 'off',
